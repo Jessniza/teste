@@ -1,41 +1,8 @@
-
-
-html{
-  background-image: url(assets/img/fundo.jpg) ;
+html {
+  background-image: url(assets/img/fundo.jpg);
   background-repeat: no-repeat;
-  background-size: auto;
-  overflow-x:hidden ;
-}
-
-@media screen and (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .containerContent {
-    margin-right: 0;
-    text-align: center;
-  }
-
-  .formulario {
-    margin-top: 20px;
-  }
-
-  .footer {
-    text-align: center;
-  }
-}
-
-/* Estilos para telas pequenas (celulares) */
-@media screen and (max-width: 480px) {
-  .container {
-    padding: 10px;
-  }
-
-  .formulario {
-    margin-top: 10px;
-  }
+  background-size: cover;
+  overflow-x: hidden;
 }
 
 /* Estilos gerais */
@@ -50,8 +17,6 @@ html{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  width: 100vw;
 }
 
 .containerContent p{
@@ -90,9 +55,10 @@ html{
 }
 
 .titulo{
-  padding-right: 40px;
+  padding-left: 20px;
+  padding-right: 25px;
   color: #032d60;
-  font-size: 42px;
+  font-size: 2.375rem;
 }
 
 .subTitulo{
@@ -107,11 +73,10 @@ html{
 }
 
 .formulario{
-  height: 42rem;
-  width: 22rem;
+  max-height: 42rem;
+  max-width: 22rem;
   padding: 3rem;
   background-color: #f3f3f3;
-  margin-right: 10%;
 }
 
 .nomeSobrenome {
@@ -168,4 +133,45 @@ html{
 .footer a{
   color: #0b5cab ;
   margin-left: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+/* 
+.titulo{
+  font-size: 20px;
+} */
+
+  .containerContent {
+    margin-right: 0;
+    text-align: center;
+    padding: 1.25rem; 
+  }
+
+  .formulario {
+    margin-top: 20px;
+    width: 100%; 
+  }
+
+  .footer {
+    text-align: center;
+  }
+}
+
+/* Estilos para telas pequenas (celulares) */
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+
+  .formulario {
+    margin-top: 10px;
+  }
+
+  .containerContent {
+    font-size: 16px;
+  }
 }
