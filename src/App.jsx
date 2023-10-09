@@ -95,7 +95,7 @@ function App() {
               <div className="check">
                 <label className="inlineFlex">
                   <input type="checkbox" id="checkBox" />
-                  Estou de acordo com o{" "}
+                  Estou de acordo com o{" "} 
                   <a href="#" target="_blank">
                     Main Services Agreement.
                   </a>
